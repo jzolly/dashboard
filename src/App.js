@@ -1,23 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import SideBar from './component/SideBar';
+import TopData from './component/TopData';
+import WebVisitors from './component/WebVisitors';
+import "./styles.css"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          It's alive!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="fullContainer">
+      <SideBar />
+      <div className="dataMain">
+        <div >
+          <TopData whichTop="Reviews" data="1,281"/>
+          <TopData whichTop="Average Rating" data="4.6"/>
+          <TopData whichTop="Sentiment Analysis" data="960"/>
+        </div>
+        <WebVisitors /> 
+      </div>
     </div>
   );
 }

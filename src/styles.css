@@ -1,0 +1,66 @@
+:root {
+   --deep:#22223b;  
+   --greenish: #5b8e7d;
+   --dgreen: #8cb369;
+   --sunflower: #d4b544;
+   --rose: #bc4b51;
+   --orange-cream: #f4a259;
+   --creme: #f2e9e4;
+
+}
+html {
+    background: var(--deep);
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    color: var(--creme);
+    margin: 0;
+}
+.fullContainer {
+    height: 98vh;
+    width: 98vw;
+    margin: 1px;
+    padding: 5px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items:flex-start;
+    padding: 5px;
+    gap: 25px;
+    overflow: hidden;
+}
+.sideBar {
+    background:var(--greenish);
+    width: 25%;
+    height: 97vh;
+    align-items: center;  
+}
+.dataMain {
+    width: 75vw;
+}
+.Reviews, .Average, .Sentiment {
+    background: var(--dgreen);
+    width: 25%;
+    padding: 0;
+    border: none;
+    margin: 0;
+    
+}
+.webVisitors {
+    background: var(--sunflower);
+    height: 60vh;
+    width: 650px;
+
+}
+.graph {
+    background: var(--rose);
+    margin: 10px;
+    margin-bottom: 10px;
+    height: 50px;
+    
+
+}
