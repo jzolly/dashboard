@@ -1,9 +1,9 @@
 :root {
    --deep:#22223b;  
-   --greenish: #5b8e7d;
-   --dgreen: #8cb369;
-   --sunflower: #d4b544;
-   --rose: #bc4b51;
+   --greenish: #3b554c;
+   --dgreen: #67834e;
+   --sunflower: #223e51;
+   --rose: #572d6f;
    --orange-cream: #f4a259;
    --creme: #f2e9e4;
 
@@ -37,30 +37,43 @@ body {
     background:var(--greenish);
     width: 25%;
     height: 97vh;
-    align-items: center;  
+    text-align: center; 
+}
+.sideBar h2 {
+    padding-top: 85%;
 }
 .dataMain {
-    width: 75vw;
+    width: 70vw;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    
 }
 .Reviews, .Average, .Sentiment {
     background: var(--dgreen);
-    width: 25%;
+    width: 30%;
     padding: 0;
     border: none;
     margin: 0;
+    height: 250px;
+    padding-left: 5px;
+
     
 }
 .webVisitors {
     background: var(--sunflower);
-    height: 60vh;
-    width: 650px;
-
+    height: 65.3vh;
+    width: 100%;
+}
+.webVisitors p {
+    padding-bottom: 60px;
 }
 .graph {
     background: var(--rose);
-    margin: 10px;
-    margin-bottom: 10px;
-    height: 50px;
-    
-
+    margin:25px;
+    height: 250px;
+}
+h2 {
+    font-size: 20px;
 }
